@@ -21,7 +21,8 @@ Vagrant::Config.run do |config|
     chef.json.merge!({
       "mysql" => {
         "server_root_password" => "vagrant",
-        "bind_address" => "0.0.0.0"
+        "bind_address" => "0.0.0.0",
+        "data_dir" => "/vagrant/mysql"
       }
     })
   end
